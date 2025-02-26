@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Faculty Portal</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Attendance</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">Welcome to the Faculty Dashboard</div>
+        <div class="card-container">
+            <div class="card">
+                <h3>Students</h3>
+                <p>View and manage student data.</p>
+                <a href="#" class="btn">View</a>
+            </div>
+            <div class="card">
+                <h3>Attendance</h3>
+                <p>Track student attendance records.</p>
+                <a href="#" class="btn">Check</a>
+            </div>
+            <div class="card">
+                <h3>Leave</h3>
+                <p>Track and apply leave.</p>
+                <a href="#" class="btn">View</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
